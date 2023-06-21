@@ -1,9 +1,5 @@
 package com.therifian.AoC2015;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Day03 {
