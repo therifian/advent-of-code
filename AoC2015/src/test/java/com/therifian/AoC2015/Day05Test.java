@@ -8,26 +8,46 @@ public class Day05Test {
 
     @Test
     void test() {
-        assertTrue(Day05.solve("ugknbfddgicrmopn"));
+        assertTrue(Day05.part1("ugknbfddgicrmopn"));
     }
 
     @Test
     void test2() {
-        assertTrue(Day05.solve("aaa"));
+        assertTrue(Day05.part1("aaa"));
     }
 
     @Test
     void test3() {
-        assertFalse(Day05.solve("jchzalrnumimnmhp"));
+        assertFalse(Day05.part1("jchzalrnumimnmhp"));
     }
 
     @Test
     void test4() {
-        assertFalse(Day05.solve("haegwjzuvuyypxyu"));
+        assertFalse(Day05.part1("haegwjzuvuyypxyu"));
     }
 
     @Test
     void test5() {
-        assertFalse(Day05.solve("dvszwmarrgswjxmb"));
+        assertFalse(Day05.part1("dvszwmarrgswjxmb"));
+    }
+
+    @Test
+    void test6() {
+        assertTrue(Day05.part2("qjhvhtzxzqqjkmpb"));
+    }
+
+    @Test
+    void test7() {
+        assertTrue(Day05.part2("xxyxx"));
+    }
+
+    @Test
+    void test8() {
+        assertFalse(Day05.part2("uurcxstgmygtbstg"));
+    }
+
+    @Test
+    void test9() {
+        assertFalse(Day05.part2("ieodomkazucvgmuy"));
     }
 }
