@@ -17,42 +17,42 @@ public class Day07Test {
 
     @Test
     void testD() {
-        assertEquals(72, Day07.part1(input).get("d"));
+        assertEquals(72, Day07.part1(input, "d"));
     }
 
     @Test
     void testE() {
-        assertEquals(507, Day07.part1(input).get("e"));
+        assertEquals(507, Day07.part1(input, "e"));
     }
 
     @Test
     void testF() {
-        assertEquals(492, Day07.part1(input).get("f"));
+        assertEquals(492, Day07.part1(input, "f"));
     }
 
     @Test
     void testG() {
-        assertEquals(114, Day07.part1(input).get("g"));
+        assertEquals(114, Day07.part1(input, "g"));
     }
 
     @Test
     void testH() {
-        assertEquals(65412, Day07.part1(input).get("h"));
+        assertEquals(65412, Day07.part1(input, "h"));
     }
 
     @Test
     void testI() {
-        assertEquals(65079, Day07.part1(input).get("i"));
+        assertEquals(65079, Day07.part1(input, "i"));
     }
 
     @Test
     void testX() {
-        assertEquals(123, Day07.part1(input).get("x"));
+        assertEquals(123, Day07.part1(input, "x"));
     }
 
     @Test
     void testY() {
-        assertEquals(456, Day07.part1(input).get("y"));
+        assertEquals(456, Day07.part1(input, "y"));
     }
 
 }
