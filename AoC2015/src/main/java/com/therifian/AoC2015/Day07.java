@@ -5,7 +5,15 @@ import java.util.Map;
 
 public class Day07 {
 
-    public static Map<String, Integer> part1(String input) {
+    public static int part1(String input, String researched) {
+        return resolution(input, false, researched).get(researched);
+    }
+
+    public static int part2(String input, String researched) {
+        return resolution(input, true, researched).get(researched);
+    }
+
+    private static Map<String, Integer> resolution(String input, boolean override, String researched) {
         Map<String, Integer> wires = new HashMap<>();
         String[] instructions = input.split("\n");
 
@@ -15,6 +23,9 @@ public class Day07 {
             else if (arr.length == 4) wires.put(arr[3], -1);
             else if (arr.length == 5) wires.put(arr[4], -1);
         }
+
+        if (override)
+            wires.put("b", part1(input, researched));
 
         int length = instructions.length;
 
@@ -63,7 +74,7 @@ public class Day07 {
         return wires;
     }
 
-    public static int bitwise(int left, int right, String op) {
+    private static int bitwise(int left, int right, String op) {
         int result = 0;
         switch (op) {
             case "AND":
