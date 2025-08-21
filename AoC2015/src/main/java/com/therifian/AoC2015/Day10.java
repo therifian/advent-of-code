@@ -1,7 +1,5 @@
 package com.therifian.AoC2015;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class Day10 {
 
     public static int part1(String input, int times) {
