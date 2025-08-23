@@ -46,4 +46,29 @@ public class Day12Test {
     void test8() {
         assertEquals(3, Day12.part1("[[[3]]]"));
     }
+
+    @Test
+    void test9() {
+        assertEquals(6, Day12.part2("[1,2,3]"));
+    }
+
+    @Test
+    void test10() {
+        assertEquals(4, Day12.part2("[1,{\"c\":\"red\",\"b\":2},3]"));
+    }
+
+    @Test
+    void test11() {
+        assertEquals(0, Day12.part2("{\"d\":\"red\",\"e\":[1,2,3,4],\"f\":5}"));
+    }
+
+    @Test
+    void test12() {
+        assertEquals(6, Day12.part2("[1,\"red\",5]"));
+    }
+
+    @Test
+    void test13() {
+        assertEquals(0, Day12.part2("{[1,{\"c\":\"red\",\"b\":2},3]}"));
+    }
 }
