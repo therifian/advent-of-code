@@ -51,12 +51,8 @@ public class Day08 {
             }
             str.append('"');
             sumEncoded += str.length();
-            System.out.println(str);
             encoded.append(str).append("\n");
         }
-        System.out.println(encoded);
-        System.out.println(sumEncoded);
-        System.out.println(sumLiteral);
         return  sumEncoded- sumLiteral;
     }
 }
